@@ -7,12 +7,20 @@
 </head>
 <body>
 
-    <h1>Hello, World!</h1>
+    <h1>Welcome to my Porfolio</h1>
 
-    <!-- A button with some inline CSS for styling -->
-    <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
-        Click me!
+    <!-- A button with onclick attribute to navigate to another page -->
+    <button onclick="redirectToAnotherPage()" style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+        First Project!
     </button>
+
+    <script>
+        // JavaScript function to redirect to another page
+        function redirectToAnotherPage() {
+            // Change 'anotherPage.html' to the actual page you want to navigate to
+            window.location.href = 'anotherPage.html';
+        }
+    </script>
 
 </body>
 </html>
