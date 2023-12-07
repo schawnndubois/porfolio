@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-    <!--- Head HTML goes here -->
-    
-     <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center Image Example</title>
+    <title>Center Image with Messages</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100;
+            height: 100vh;
             margin: 0;
+            text-align: center;
         }
 
         img {
             max-width: 100%; /* Ensure the image doesn't exceed its natural size */
             max-height: 100%;
+            margin-top: 20px; /* Add some space between the image and the message above */
+            margin-bottom: 20px; /* Add some space between the image and the message below */
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
         }
     </style>
-   
-    
-    <!--- Link to styles in CSS tab -->
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  </head>
-  <body>
-    <!--- Paste HTML below here -->
-    
-<h3>hi my friend</h3><br>
-<img src="1.png" alt="Description of the image"><br>
-<h3>hi my friend</h3><br>
-
-    <!--- Link to code in JavaScript tab -->
-    <script src="script.js"></script>
-  </body>
+</head>
+<body>
+    <p>This is a message above the image.</p>
+    <!-- Replace 'your-image.jpg' with the path to your image -->
+    <img src="o.bmp" alt="Centered Image">
+    <p>This is a message below the image.</p>
+</body>
 </html>
